@@ -14,6 +14,8 @@ class Student
       grade TEXT
     );"
 
+    DB[:conn].execute(sql)
+
   end
 
 end
