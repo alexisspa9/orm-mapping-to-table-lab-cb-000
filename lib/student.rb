@@ -8,7 +8,11 @@ class Student
     @id = id
   end
   def self.create_table
-    sql = << SQL
+    sql = << SQL "CREATE TABLE IF NOT EXISTS student(
+      id INTEGER PRIMARY KEY,
+      name TEXT,
+      grade TEXT
+    );"
 
   end
 
